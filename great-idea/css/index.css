@@ -104,18 +104,6 @@ footer p {
 	width: 200px;
 }
 
-.btn {
-	border: 1px solid black;
-	text-align: center;
-	display: inline-block;
-	padding: 5px 20px;
-	margin: 10px 100px;
-	background-color: white;
-	border-radius: 10px;
-	height: 40px;
-	width: 100px;
-}
-
 
 
 /*Specific to Homepage*/
@@ -137,6 +125,18 @@ h1 {
 	text-align: center;
 	vertical-align: center;
 	padding: 10px;
+}
+
+.btn {
+	border: 1px solid black;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 10px 100px;
+	background-color: white;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
 }
 
 .round-image {
@@ -191,11 +191,26 @@ h1 {
 
 /*Specific to Services*/
 
+.services-header-img {
+	margin-top: 5%;
+	width: 100%;
+}
+
+.services-desc {
+	flex-flow: column wrap;
+	padding: 5%;
+	margin: 5%;
+}
+
+.services-desc h2 {
+	font-size: 32px;
+}
+
 .tile {
 	background-color: lightgray;
 	border: 1px solid black;
-	width: 50%;
-	height: 200px;
+	width: 40%;
+	height: auto;
 	padding: 5%;
 	margin: 5%;
 	flex-flow: column wrap;
@@ -209,9 +224,56 @@ h1 {
 	margin: 10% 0px;
 	padding: 30px;
 	text-align: left;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
+	justify-content: left;
 }
 
-.first-row {
-	flex-flow: column wrap;
+.first-row, .second-row, .third-row {
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+
+.digi-design, .digi-marketing, .iosdev {
+	align-self: left;
+}
+
+.ux, .webdev, .android {
+	align-self: right;
+}
+
+
+.services-btn {
+	border: 1px solid black;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 5% 10%;
+	margin: 10%;
+	background-color: white;
+	border-radius: 5px;
+	height: 30px;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.facts { 
+	flex-direction: row;
+}
+
+.facts-txt {
+	width: 40%;
+	padding: 5%;
+	display: inline-block;
+	text-align: left;
+}
+
+ul {
+	list-style-type: square;
+	padding: 10%;
+}
+
+.facts-img {
+	width: 40%;
+	height: auto;
+	float: left;
 }
