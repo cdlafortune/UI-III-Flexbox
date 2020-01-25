@@ -91,6 +91,8 @@ nav a {
 
 main {
 	margin: 30px 10%;
+	width: 85%;
+	height: auto;
 }
 
 footer {
@@ -101,6 +103,20 @@ footer p {
 	margin: 0 auto;
 	width: 200px;
 }
+
+.btn {
+	border: 1px solid black;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 10px 100px;
+	background-color: white;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+}
+
+
 
 /*Specific to Homepage*/
 .top-section {
@@ -130,25 +146,15 @@ h1 {
 	height: 300px;
 }
 
-.btn {
-	border: 1px solid black;
-	text-align: center;
-	display: inline-block;
-	padding: 5px 20px;
-	margin: 10px 100px;
-	background-color: white;
-}
-
 .page-divider {
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
 	width: 100%;
-	display: block;
-	margin: 0 auto;
+	height: auto;
+	margin: 10% 5%;
 	padding: 30px;
 	text-align: left;
 }
-
 .row-1 {
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -188,10 +194,11 @@ h1 {
 .tile {
 	background-color: lightgray;
 	border: 1px solid black;
-	width: 40%px;
-	height: 300pxpx;
-	padding: 10%;
+	width: 50%;
+	height: 200px;
+	padding: 5%;
 	margin: 5%;
+	flex-flow: column wrap;
 }
 
 .services-page-divider {
@@ -199,8 +206,12 @@ h1 {
 	border-top: 1px solid black;
 	width: 100%;
 	height: auto;
-	display: flex;
-	flex-direction: row wrap;
+	margin: 10% 0px;
 	padding: 30px;
 	text-align: left;
+	flex-flow: column wrap;
+}
+
+.first-row {
+	flex-flow: column wrap;
 }
