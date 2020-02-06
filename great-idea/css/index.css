@@ -64,3 +64,216 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.flex {
+	display: flex;
+}
+
+
+nav {
+	width: 100%;
+	position: fixed;
+	align-items: center;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: space-around;
+	margin-top: 0px;
+	top: 0px;
+	background-color: lightskyblue;
+}
+
+nav a {
+	padding: 10px;
+	margin: 15px;
+	color: black;
+	text-decoration: none;
+}
+
+main {
+	margin: 30px 10%;
+	width: 85%;
+	height: auto;
+}
+
+footer {
+	width: 100%;
+}
+
+footer p {
+	margin: 0 auto;
+	width: 200px;
+}
+
+
+
+/*Specific to Homepage*/
+.top-section {
+	width: 100%;
+	margin: 20px;
+	padding-top: 50px;
+	justify-content: space-between;
+}
+
+.top-section-text {
+	height: 300px;
+	width: 400px;
+	flex-flow: row wrap;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+	vertical-align: center;
+	padding: 10px;
+}
+
+.btn {
+	border: 1px solid black;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 10px 100px;
+	background-color: white;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+}
+
+.round-image {
+	padding: 25px 30px;
+	margin: 50px 25px 25px 100px;
+	width: 300px;
+	height: 300px;
+}
+
+.page-divider {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	width: 100%;
+	height: auto;
+	margin: 10% 5%;
+	padding: 30px;
+	text-align: left;
+}
+.row-1 {
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.features, .about {
+	width: 40%;
+	flex-direction: column;
+	margin: 5%;
+}
+
+.about {
+	margin-left: 60px;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+}
+
+.services, .product, .vision {
+	width: 30%;
+	margin: 10px;
+	flex-flow: column wrap;
+}
+
+.contact {
+	margin: 30px;
+	padding: 20px;
+}
+
+/*Specific to Services*/
+
+.services-header-img {
+	margin-top: 5%;
+	width: 100%;
+}
+
+.services-desc {
+	flex-flow: column wrap;
+	padding: 5%;
+	margin: 5%;
+}
+
+.services-desc h2 {
+	font-size: 32px;
+}
+
+.tile {
+	background-color: lightgray;
+	border: 1px solid black;
+	width: 40%;
+	height: auto;
+	padding: 5%;
+	margin: 5%;
+	flex-flow: column wrap;
+}
+
+.services-page-divider {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	width: 100%;
+	height: auto;
+	margin: 10% 0px;
+	padding: 30px;
+	text-align: left;
+	flex-flow: row wrap;
+	justify-content: left;
+}
+
+.first-row, .second-row, .third-row {
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+
+.digi-design, .digi-marketing, .iosdev {
+	align-self: left;
+}
+
+.ux, .webdev, .android {
+	align-self: right;
+}
+
+
+.services-btn {
+	border: 1px solid black;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 5% 10%;
+	margin: 10%;
+	background-color: white;
+	border-radius: 5px;
+	height: 30px;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+.facts { 
+	flex-direction: row;
+}
+
+.facts-txt {
+	width: 40%;
+	padding: 5%;
+	display: inline-block;
+	text-align: left;
+}
+
+ul {
+	list-style-type: square;
+	padding: 10%;
+}
+
+.facts-img {
+	width: 40%;
+	height: auto;
+	float: left;
+}
